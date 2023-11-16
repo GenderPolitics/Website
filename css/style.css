@@ -3010,7 +3010,7 @@ h6 {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
     background-image: none !important;
-    background-color: #fcf8ff; }
+    background-color: transparent; }
 
   /* Blog page Area css
   ============================================================================================ */
@@ -3249,7 +3249,7 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .blog_version .footer_area {
-  background: #f9f9fd; }
+  background: transparent; }
   .blog_version .footer_area:before {
     content: none; }
 
@@ -3263,7 +3263,7 @@ h6 {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: #f9f9fd;
+    background: transparent;
     z-index: -1; }
   @media (max-width: 1024px) {
     .footer_area {
