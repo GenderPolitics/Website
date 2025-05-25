@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>젠더정치연구회</title>
+	<title>젠더정치연구회 - 새로운 사이트로 이동</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -15,249 +15,142 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			background: #f8f9fa url('img/body-bg.png') no-repeat center center fixed;
+			background-size: cover;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2rem 3rem 1rem 3rem;
+			box-sizing: border-box;
+		}
+		.logo {
+			height: 48px;
+		}
+		.menu {
+			display: flex;
+			gap: 2.5rem;
+		}
+		.menu-item {
+			color: #222;
+			font-size: 1.2rem;
+			font-weight: 600;
+			text-decoration: none;
+			opacity: 0.5;
+			cursor: default;
+			transition: opacity 0.2s;
+		}
+		.menu-item.active {
+			color: #7b61ff;
+			opacity: 1;
+			cursor: default;
+		}
+		.main-section {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			min-height: 70vh;
+			gap: 4rem;
+		}
+		.main-illust {
+			max-width: 350px;
+			width: 100%;
+		}
+		.main-content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			max-width: 480px;
+		}
+		.main-content h1 {
+			font-size: 2.7rem;
+			font-weight: bold;
+			margin-bottom: 1.2rem;
+			color: #222;
+		}
+		.main-content p {
+			font-size: 1.3rem;
+			color: #444;
+			margin-bottom: 1.2rem;
+		}
+		.main-content .new-url {
+			margin-bottom: 2rem;
+		}
+		.main-content .new-url a {
+			color: #4a90e2;
+			font-weight: bold;
+			font-size: 1.1rem;
+			word-break: break-all;
+			text-decoration: underline;
+			transition: color 0.2s;
+		}
+		.main-content .new-url a:hover {
+			color: #357abd;
+		}
+		.redirect-button {
+			padding: 1.1rem 2.5rem;
+			font-size: 1.3rem;
+			background: linear-gradient(90deg, #7b61ff 0%, #6ec6ff 100%);
+			color: white;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			font-weight: bold;
+			box-shadow: 0 4px 16px rgba(123,97,255,0.08);
+			transition: background 0.3s;
+			text-decoration: none;
+		}
+		.redirect-button:hover {
+			background: linear-gradient(90deg, #6ec6ff 0%, #7b61ff 100%);
+			color: #fff;
+			text-decoration: none;
+		}
+		@media (max-width: 900px) {
+			.main-section {
+				flex-direction: column;
+				gap: 2rem;
+				min-height: 60vh;
+			}
+			.header {
+				flex-direction: column;
+				gap: 1rem;
+				padding: 1.5rem 1rem 0.5rem 1rem;
+			}
+		}
+	</style>
 </head>
 
 <body>
-
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">연구활동</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="gender-sensitivity.html">성인지감수성 지표</a></li>
-									<li class="nav-item"><a class="nav-link" href="text-analysis.html">국회회의록 분석</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="education.html">교육</a></li>
-							<li class="nav-item"><a class="nav-link" href="publication.html">연구성과</a></li>
-							<li class="nav-item"><a class="nav-link" href="notice.html">공지사항</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
-
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us2.png" alt="">
-					</div>
-				</div>
-
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>About Us</h2>
-							<p>
-							연구회 소개
-						</p>
-						<a class="primary_btn" href="about.html"><span>More</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
-
-	<!--================ Start Features Area =================-->
-	<section class="features_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>연구 주제</h2>
-						<p>
-							주요 연구 주제 및 목표 소개
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row feature_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s1.png" alt="">
-						<h4>선호</h4>
-						<p>성평등, 젠더갈등에 대한 인식과 명목적, 실질적 대표에 대한 개인들의 선호 변화.
-						   </p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s2.png" alt="">
-						<h4>과정</h4>
-						<p>선거와 입법과정 속에서 이뤄지고 있는 여성의 명목대표성과 실질대표성.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s3.png" alt="">
-						<h4>제도와 정책</h4>
-						<p>여성 대표성을 증진시키기 위해 실시되고 있는 정책들의 효과 분석, 정책 방안 모색</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s4.png" alt="">
-						<h4>교육</h4>
-						<p>정기 워크숍 및 세미나, 초청 강연 등 다양한 방식으로의 교육 연계.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Features Area =================-->
-
-	<!--================ Start members Area =================-->
-	<div class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Members</h2>
-						<p>연구 구성원 소개</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpeg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>박선경</h4>
-									<p>연구 책임자. <br>
-									고려대학교 글로벌융합학부 부교수</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>강우창</h4>
-									<p>공동 연구원. <br>
-									고려대학교 정치외교학과 부교수</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t3.jpeg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>권예소라</h4>
-									<p>공동 연구원. <br>
-									성균관대학교 정치외교학과 조교수</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t4.jpeg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>송병권</h4>
-									<p>공동연구원. <br>
-									서강대학교 정치외교학과 부교수</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t5.jpeg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>차현진</h4>
-									<p>공동연구원. <br>
-									한국교통대학교 교양학부 조교수</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
+	<div class="header">
+		<img src="img/logo.png" alt="젠더정치연구회 로고" class="logo">
+		<nav class="menu">
+			<span class="menu-item active">HOME</span>
+			<span class="menu-item">ABOUT</span>
+			<span class="menu-item">연구활동</span>
+			<span class="menu-item">교육</span>
+			<span class="menu-item">연구성과</span>
+			<span class="menu-item">공지사항</span>
+		</nav>
+	</div>
+	<div class="main-section">
+		<img src="img/about-us2.png" alt="일러스트" class="main-illust">
+		<div class="main-content">
+			<h1>젠더정치연구회<br>새로운 사이트 안내</h1>
+			<p>젠더정치연구회 공식 웹사이트가 새로운 주소로 이전되었습니다.<br>아래 버튼을 눌러 새로운 사이트로 이동해 주세요.</p>
+			<div class="new-url"><a href="https://genderpolitics.wixsite.com/home" target="_blank">https://genderpolitics.wixsite.com/home</a></div>
+			<a href="https://genderpolitics.wixsite.com/home" class="redirect-button" target="_blank">새로운 사이트로 이동하기</a>
 		</div>
 	</div>
-	<!--================ End Testimonial Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="index.html">
-								<img src="img/logo.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
 </body>
 
 </html>
